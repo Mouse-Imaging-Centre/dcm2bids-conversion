@@ -1,0 +1,8 @@
+#!/bin/bash
+
+this=$(readlink -f "$0")
+here=$(dirname $this)
+
+source $here/../pyvenv/bin/activate
+
+python $here/../src/dcm2bids_conversion.py "$@"

@@ -1,0 +1,190 @@
+{
+    "descriptions": [
+        {
+            "dataType": "anat",
+            "modalityLabel": "T1w",
+            "criteria": {
+                "SeriesDescription": "T1.*SAG.*MPRAGE"
+            }
+        },
+        {
+            "dataType": "anat",
+            "modalityLabel": "T2w",
+            "criteria": {
+                "SeriesDescription": "T2.*AX.*TSE"
+            }
+        },
+        {
+            "dataType": "anat",
+            "modalityLabel": "T2w",
+            "criteria": {
+                "SeriesDescription": "t2_space_sag_p2_isoAF3D1",
+                "RepetitionTime": 3.2
+            }
+        },
+        {
+            "dataType": "fmap",
+            "modalityLabel": "magnitude1",
+            "criteria": {
+                "SeriesDescription": "gre_field_mapping.*for.*DTI",
+                "ImageType": "^M$",
+                "EchoTime": 0.00519
+            }
+        },
+        {
+            "dataType": "fmap",
+            "modalityLabel": "magnitude2",
+            "criteria": {
+                "SeriesDescription": "gre_field_mapping.*for.*DTI",
+                "ImageType": "^M$",
+                "EchoTime": 0.00765
+            }
+        },
+        {
+            "dataType": "fmap",
+            "modalityLabel": "phasediff",
+            "criteria": {
+                "SeriesDescription": "gre_field_mapping.*for.*DTI",
+                "ImageType": "^P$",
+                "EchoNumber": 2,
+                "EchoTime": 0.00765
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell19dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*19.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell20dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*20.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell21dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*21.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell29dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*29.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell30dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*30.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell35dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*35.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell41dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*41.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-singleshell60dir",
+            "criteria": {
+                "SeriesDescription": "DTI.*AX.*60.*(1000|2mm|b=0|b0)(?!(.*_FA$|.*_ColFA$|.*_ADC$|.*_TRACEW$))"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-multishell30dir",
+            "criteria": {
+                "SeriesDescription": "^(?!(Blip|blip)).*dMRI.*b1000.*d30"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-multishell40dir",
+            "criteria": {
+                "SeriesDescription": "dMRI.*b1600.*d40"
+            }
+        },
+        {
+            "dataType": "dwi",
+            "modalityLabel": "dwi",
+            "customLabels": "acq-multishell60dir",
+            "criteria": {
+                "SeriesDescription": "dMRI.*b2600.*d60"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-rest",
+            "criteria": {
+                "SeriesDescription": "fMRI.*RSN.*Ortho|BOLD.*3.*5mm.*ISO"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-faces",
+            "criteria": {
+                "SeriesDescription": "fMRI.*Dynamic.*Faces.*Orthogonal"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-stop",
+            "criteria": {
+                "SeriesDescription": "fMRI.*Stop.*Signal.*Task.*Orthogonal"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-tom1",
+            "criteria": {
+                "SeriesDescription": "fMRI.*Ortho.*TOM1|fMRI.*Ortho.*1.*of.*3"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-tom2",
+            "criteria": {
+                "SeriesDescription": "fMRI.*Ortho.*TOM2|fMRI.*Ortho.*2.*of.*3"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-tom3",
+            "criteria": {
+                "SeriesDescription": "fMRI.*Ortho.*TOM3|fMRI.*Ortho.*3.*of.*3"
+            }
+        }
+    ]
+}
